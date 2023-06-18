@@ -1,0 +1,19 @@
+.background-animate {
+  background-size: 600%;
+
+  -webkit-animation: bgLoop 6s ease infinite;
+  -moz-animation: bgLoop 6s ease infinite;
+  animation: bgLoop 6s ease infinite;
+}
+
+@keyframes bgLoop {
+  0%,
+  100% {
+    background-position: 0% 50%;
+    transform: rotate(45deg);
+  }
+  50% {
+    background-position: 100% 50%;
+    transform: rotate(-45deg);
+  }
+}
