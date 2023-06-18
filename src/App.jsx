@@ -1,6 +1,7 @@
 import "./App.css";
 import { MainLayout } from "./Layout/MainLayout";
 import { HeroText } from "./components/HeroText/HeroText";
+import Component from "./components/TestComponent";
 import { Card } from "./ui/Card";
 import { Hero } from "./ui/Hero";
 import { CodeLaptop } from "./ui/svg/CodeLaptop";
@@ -26,15 +27,28 @@ export default function App() {
           <Card
             title={"ReactJS Memory Game"}
             img={
-              "https://images.unsplash.com/photo-1682687982423-295485af248a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+              "https://images.unsplash.com/photo-1686903431112-9b426ee61dad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
             }
             p={
               "Test your memory and have fun while matching pairs of cards featuring delightful images. Built with ReactJS, this interactive game offers an engaging and challenging experience for players of all ages."
             }
             linkText={"Try it out!"}
-            link={"https://xiaoluxtl.github.io/bg-remove/"}
+            link={"https://xiaoluxtl.github.io/memorama-react/"}
+          />
+
+          <Card
+            title={"ReactJS Meme Generator"}
+            img={
+              "https://images.unsplash.com/photo-1523406909961-95040afc761a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+            }
+            p={
+              "Meme Generator project built with ReactJS and JavaScript. Unleash your creativity and sense of humor as you effortlessly create hilarious memes in just a few clicks. Add custom captions, this project empowers you to express yourself and share the laughter with friends and family."
+            }
+            linkText={"Try it out!"}
+            link={"https://xiaoluxtl.github.io/meme-gen-localst/"}
           />
         </div>
+        <Component />
       </MainLayout>
     </>
   );
