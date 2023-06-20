@@ -24,12 +24,20 @@ export function LuisR() {
           inclusive for everyone.
         </p>
         <div className="flex gap-2 mt-[-1.5rem]">
-          <form action="#" method="get" target="_blank">
+          <form
+            action="https://www.linkedin.com/in/luis-rendon/"
+            method="get"
+            target="_blank"
+          >
             <button className="btn btn-primary hover:text-accent-focus w-16">
               <LinkedinSVG />
             </button>
           </form>
-          <form action="#" method="get" target="_blank">
+          <form
+            action="https://github.com/XiaoLuxtl/"
+            method="get"
+            target="_blank"
+          >
             <button className="btn btn-primary hover:text-accent-focus w-16">
               <GithubSVG />
             </button>

@@ -31,12 +31,16 @@ export function Card({ title, img, p, linkText, link, linkGithub }) {
             )}
 
             {/* Not github link and website link open the website */}
+
             {!linkGithub && link ? (
-              <form action={link} method="get" target="_blank">
-                <button className="btn btn-primary hover:text-accent-focus w-16">
-                  {linkText}
-                </button>
-              </form>
+              <a
+                className="btn btn-primary hover:text-accent-focus w-16"
+                href={link}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {linkText}
+              </a>
             ) : (
               <button
                 className="btn btn-primary hover:text-accent-focus"
