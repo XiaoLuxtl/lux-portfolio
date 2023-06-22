@@ -13,6 +13,7 @@ export function Card({ title, img, p, linkText, link, linkGithub }) {
         <img
           className="h-full"
           src={img}
+          loading="lazy"
           alt={`Github project preview image for the project ${title}`}
         />
       </figure>
