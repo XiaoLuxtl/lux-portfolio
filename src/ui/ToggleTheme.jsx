@@ -20,7 +20,7 @@ export function ToggleTheme() {
         className={
           theme === "night"
             ? "swap-on fill-current w-8 h-8"
-            : "swap-on fill-current w-8 h-8 text-yellow-500"
+            : "swap-on fill-current w-8 h-8 text-amber-500"
         }
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
