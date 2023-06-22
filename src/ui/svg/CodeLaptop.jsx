@@ -1,4 +1,4 @@
-export function CodeLaptop() {
+export default function CodeLaptop() {
   return (
     <>
       <svg

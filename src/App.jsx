@@ -1,20 +1,31 @@
+import React from "react";
+
 import "./App.css";
 import { MainLayout } from "./Layout/MainLayout";
-import { Experience } from "./components/Experience";
-import { HeroText } from "./components/HeroText/HeroText";
-import { LuisR } from "./components/LuisR";
-import { Projects } from "./components/Projects";
-import { Hero } from "./ui/Hero";
-import { CodeLaptop } from "./ui/svg/CodeLaptop";
+import { Loading } from "./ui/Loading";
+
+const Hero = React.lazy(() => import("./components/Hero"));
+const HeroText = React.lazy(() => import("./ui/HeroText/HeroText"));
+const CodeLaptop = React.lazy(() => import("./ui/svg/CodeLaptop"));
+
+const LuisR = React.lazy(() => import("./components/LuisR"));
+const Experience = React.lazy(() => import("./components/Experience"));
+const Projects = React.lazy(() => import("./components/Projects"));
 
 export default function App() {
   return (
     <>
       <MainLayout>
-        <Hero title={<HeroText />} p={<CodeLaptop />} />
-        <LuisR />
-        <Experience />
-        <Projects />
+        <React.Suspense fallback={<Loading />}>
+          <Hero title={<HeroText />} p={<CodeLaptop />} />
+          <React.Suspense fallback={<Loading />}>
+            <LuisR />
+            <React.Suspense fallback={<Loading />}>
+              <Experience />
+              <Projects />
+            </React.Suspense>
+          </React.Suspense>
+        </React.Suspense>
       </MainLayout>
     </>
   );

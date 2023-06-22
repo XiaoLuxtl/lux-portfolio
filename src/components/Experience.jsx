@@ -2,7 +2,7 @@ import { Card } from "../ui/Card";
 import { SectionTitle } from "../ui/SectionTitle";
 import experience from "../mocks/experience";
 
-export function Experience() {
+export default function Experience() {
   return (
     <div className="relative bg-base-200 w-full mt-12 pb-12 ">
       <div className="skewed bg-base-200 w-full h-64" />

@@ -1,6 +1,6 @@
 import "./styles.css";
 
-export function HeroText() {
+export default function HeroText() {
   return (
     <>
       Transforming{" "}
