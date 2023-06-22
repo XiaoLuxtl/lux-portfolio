@@ -15,16 +15,22 @@ export function Pagination({ totalItems, itemsPerPage, onPageChange }) {
         «
       </button> */}
 
-      {Array.from({ length: totalPages }, (_, index) => index + 1).map(
-        (page) => (
-          <button
-            key={pid + page}
-            className="join-item btn btn-outline"
-            onClick={() => handlePageChange(page)}
-          >
-            {page}
-          </button>
-        )
+      {totalPages > 1 ? (
+        <>
+          {Array.from({ length: totalPages }, (_, index) => index + 1).map(
+            (page) => (
+              <button
+                key={pid + page}
+                className="join-item btn btn-outline"
+                onClick={() => handlePageChange(page)}
+              >
+                {page}
+              </button>
+            )
+          )}
+        </>
+      ) : (
+        <></>
       )}
 
       {/* <button onClick={() => handlePageChange(page+1)} className="join-item btn">

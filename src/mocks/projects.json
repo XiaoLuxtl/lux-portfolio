@@ -22,13 +22,5 @@
     "linkText": "Try it out!",
     "link": "https://xiaoluxtl.github.io/meme-gen-localst/",
     "linkGithub": "https://github.com/XiaoLuxtl/meme-gen-localst"
-  },
-  {
-    "title": "AI Background test Removal with Cloudinary",
-    "img": "./imgs/bgremove.jpg",
-    "p": "Introducing a small project that harnesses the power of Cloudinary to effortlessly remove backgrounds from images. With the AI powered Cloudinary's advanced image processing capabilities do the work for you.",
-    "linkText": "Try it out!",
-    "link": "https://xiaoluxtl.github.io/bg-remove/",
-    "linkGithub": "https://github.com/XiaoLuxtl/bg-remove"
   }
 ]
