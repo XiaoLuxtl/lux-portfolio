@@ -1,5 +1,6 @@
 import { Card } from "../ui/Card";
 import { SectionTitle } from "../ui/SectionTitle";
+import experience from "../mocks/experience";
 
 export function Experience() {
   return (
@@ -9,35 +10,16 @@ export function Experience() {
         <h2>
           <SectionTitle text={"EXPERIENCE"} />
         </h2>
-        <Card
-          title={"Decus High School - decus.mx"}
-          img={"./imgs/decushome.jpg"}
-          p={
-            "A online platform that celebrates the power of inclusive education. In decus.mx believe in creating an environment where every learner is valued, supported, and given the tools they need to succeed"
-          }
-          linkText={"Visit"}
-          link={"http://decus.mx/"}
-        />
-
-        <Card
-          title={"Decus / Learn Managmen System"}
-          img={"./imgs/decusplat.jpg"}
-          p={
-            "Implemented an online platform powered by Moodle. Through design adjustments, training, and a commitment to inclusive education, we have fostered an environment where every learner is valued, supported, and equipped for success."
-          }
-          linkText={"Visit"}
-          link={"http://decus.mx/plataforma/"}
-        />
-
-        <Card
-          title={"Website for Personal Growth and Mental Well-being"}
-          img={"./imgs/psicdamaro.jpg"}
-          p={
-            "Psicologa Argelia D'Amaro, providing professional guidance to enhance emotional well-being and personal growth. Offering effective solutions, manage emotions, improve relationships, and achieve your goals through tailored therapy."
-          }
-          linkText={"Visit"}
-          link={"https://psicologaargelia.com.mx/"}
-        />
+        {experience.map((item, index) => (
+          <Card
+            key={`E${index}`}
+            title={item.title}
+            img={item.img}
+            p={item.p}
+            linkText={item.linkText}
+            link={item.link}
+          />
+        ))}
       </div>
     </div>
   );
