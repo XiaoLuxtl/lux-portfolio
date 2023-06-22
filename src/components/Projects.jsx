@@ -1,8 +1,17 @@
 import { Card } from "../ui/Card";
 import { SectionTitle } from "../ui/SectionTitle";
-import projects from "../mocks/projects.json";
+import { usePagination } from "../hooks/usePagination";
+import { Pagination } from "../ui/Pagination";
+import initialData from "../mocks/projects.json";
 
-export function Projects() {
+export default function Projects() {
+  const itemsPerPage = 3;
+
+  const { getCurrentData, handlePageChange } = usePagination({
+    initialData,
+    itemsPerPage,
+  });
+
   return (
     <div className="relative bg-base-100 w-full">
       <div className="skewed bg-base-100 w-full h-64" />
@@ -10,9 +19,11 @@ export function Projects() {
         <h2>
           <SectionTitle text={"PROJECTS"} />
         </h2>
-        {projects.map((item, index) => (
+
+        {/* Renderiza los datos de la página actual */}
+        {getCurrentData().map((item, index) => (
           <Card
-            key={`E${index}`}
+            key={`P${index}`}
             title={item.title}
             img={item.img}
             p={item.p}
@@ -20,6 +31,12 @@ export function Projects() {
             link={item.link}
           />
         ))}
+        {/* Renderiza la paginación */}
+        <Pagination
+          totalItems={initialData.length}
+          itemsPerPage={itemsPerPage}
+          onPageChange={handlePageChange}
+        />
       </div>
     </div>
   );
