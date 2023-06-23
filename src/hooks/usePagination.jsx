@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export function usePagination({ initialData, itemsPerPage }) {
+export function usePagination({ initialData, itemsPerPage = 3 }) {
   const [data, setData] = useState(initialData); // Datos totales
   const [currentPage, setCurrentPage] = useState(1); // Número de página actual
 

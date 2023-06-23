@@ -29,6 +29,7 @@ export default function Projects() {
             p={item.p}
             linkText={item.linkText}
             link={item.link}
+            linkGithub={item.linkGithub}
           />
         ))}
         {/* Renderiza la paginación */}
