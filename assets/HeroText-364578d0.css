@@ -1,0 +1,1 @@
+.background-animate{background-size:600%;animation:bgLoop 6s ease infinite}@keyframes bgLoop{0%,to{background-position:0% 50%;transform:rotate(45deg)}50%{background-position:100% 50%;transform:rotate(-45deg)}}
