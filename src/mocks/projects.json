@@ -1,5 +1,12 @@
 [
   {
+    "title": "Snail Race UI",
+    "img": "./imgs/uisnail.jpg",
+    "p": "Assessing the ability to design visually appealing and modern screens in accordance with current design trends. The evaluation criteria strictly focus on the visual aspects.",
+    "linkText": "Visit",
+    "link": "https://www.figma.com/file/NMD5Y2tkIlxQdJXRps6Xqt/Prueba-1.5?type=design&node-id=0%3A1&t=pc7pgr1caKWHhgdI-1"
+  },
+  {
     "title": "AI Background Removal with Cloudinary",
     "img": "./imgs/bgremove.jpg",
     "p": "Introducing a small project that harnesses the power of Cloudinary to effortlessly remove backgrounds from images. With the AI powered Cloudinary's advanced image processing capabilities do the work for you.",
