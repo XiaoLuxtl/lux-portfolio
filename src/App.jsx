@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./App.css";
-import { MainLayout } from "./Layout/MainLayout";
+import { MainLayout } from "./layout/MainLayout";
 import { Loading } from "./ui/Loading";
 
 const Hero = React.lazy(() => import("./components/Hero"));
