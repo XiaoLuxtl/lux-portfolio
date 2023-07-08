@@ -1,10 +1,12 @@
 import { Card } from "../ui/Card";
 import { SectionTitle } from "../ui/SectionTitle";
-import { usePagination } from "../hooks/usePagination";
 import { Pagination } from "../ui/Pagination";
-import initialData from "../mocks/projects.json";
+import { usePagination } from "../hooks/usePagination";
+import { useProjects } from "../hooks/useProjects";
 
 export default function Projects() {
+  const {projects: initialData} = useProjects()
+
   const itemsPerPage = 3;
 
   const { getCurrentData, handlePageChange } = usePagination({

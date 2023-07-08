@@ -1,10 +1,11 @@
 import { Card } from "../ui/Card";
 import { SectionTitle } from "../ui/SectionTitle";
-import initialData from "../mocks/experience";
-import { usePagination } from "../hooks/usePagination";
 import { Pagination } from "../ui/Pagination";
+import { usePagination } from "../hooks/usePagination";
+import { useExperience } from "../hooks/useExperience";
 
 export default function Experience() {
+  const {experience: initialData} = useExperience()
   const itemsPerPage = 3;
 
   const { getCurrentData, handlePageChange } = usePagination({
